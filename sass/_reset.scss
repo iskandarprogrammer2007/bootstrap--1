@@ -1,0 +1,80 @@
+.dark {
+  $primaryColor: white;
+  $secondaryColor: black;
+  $darkModeColor: yellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.df {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__btn{
+  width: 140px;
+  height: 50px;
+  color: gray;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+.card__btn:hover{
+  background: $hoverColor;
+  border-color: $hoverColor;
+  color: $secondaryColor;
+  transition: 0.4s;
+}
+
+.back-top {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  bottom: 20px;
+  right: 20px;
+  background: $backgroundColor;
+  border-radius: 50%;
+  color: $secondaryColor;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.show__back-top {
+  display: flex;
+}
+
+
+
+
+

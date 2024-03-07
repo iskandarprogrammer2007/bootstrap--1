@@ -1,0 +1,149 @@
+#hero {
+  padding-top: 100px;
+}
+
+.hero__top {
+  padding: 50px 0px;
+}
+
+.hero__bottom {
+  background: $primaryColor;
+}
+
+.hero__bottom__card {
+  text-align: center;
+  padding: 10px;
+}
+
+.hero__bottom__card:hover {
+  background: #009eff;
+  transition: 0.4s;
+}
+
+@media (max-width: 1000px) {
+  .hero__top img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  .packing {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  .packing__left,
+  .packing__right {
+    width: 100%;
+  }
+}
+
+.ancessiors {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 50px;
+  padding: 80px 0px;
+}
+
+.accesior__card img {
+  width: 50%;
+}
+
+.accesior__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.see__btn {
+  width: 180px;
+  height: 50px;
+  color: $secondaryColor;
+  background-color: $hoverColor;
+  border: 1px solid $hoverColor;
+  border-radius: 2px;
+}
+
+.see__btn:hover {
+  background: $secondaryColor;
+  color: $hoverColor;
+  transition: 0.4s;
+}
+
+.features__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.features__bottom {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  padding: 80px 0px;
+}
+
+.smart {
+  padding: 100px 0px;
+  background: url(../images/smart-section-backround.svg) 100% no-repeat;
+  object-fit: cover;
+  background-color: #0e0e16;
+}
+
+.smart__left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.led {
+  padding: 100px 0px;
+  background: url(../images/led.svg) 100% no-repeat;
+  object-fit: cover;
+  background-color: #0e0e16;
+}
+
+@media (max-width: 750px) {
+  .smart__left {
+    width: 100%;
+  }
+  .smart__right {
+    display: none;
+  }
+}
+
+.braking__left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.braking {
+  padding: 100px 0px;
+}
+
+
+@media (max-width: 750px) {
+    .braking{
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap ;
+        gap: 30px;
+
+    }
+  .braking__left {
+    width: 100%;
+  }
+  .braking__right{
+    width: 100%;
+  }
+}
